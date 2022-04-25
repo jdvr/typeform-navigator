@@ -92,7 +92,6 @@ function Forms({ workspace, clientHttp }: { workspace: Workspace; clientHttp: ty
   }, [forms, error]);
 
   const isLoading = forms === null && error === null;
-  console.log(IN3_DATE);
   return (
     <List isLoading={isLoading} navigationTitle={`Forms of ${workspace.name}`} searchBarPlaceholder="Type to filter">
       {forms &&
